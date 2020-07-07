@@ -1,0 +1,32 @@
+{
+  "name": "typescript-pro-project",
+  "version": "1.0.0",
+  "description": "A micro library written from scrath to take advantage of the power of TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test: watch": "npm test -- --watch",
+    "build": "tsc -p tsconfig.json"
+  },
+  "author": "liyang",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^26.0.4",
+    "husky": "^4.2.5",
+    "jest": "^26.1.0",
+    "lint-staged": "^10.2.11",
+    "prettier": "^2.0.5",
+    "ts-jest": "^26.1.1",
+    "typescript": "^3.9.6"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ],
+    "transform": {
+      ".ts": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": ".*\\.spec\\.ts$"
+  }
+}
